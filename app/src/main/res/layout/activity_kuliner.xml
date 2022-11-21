@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Kuliner">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/grey_dark">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/grey_card"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp">
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Mari Nikmati Kuliner Lokal"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/grey_card"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kuliner Lokal Surabaya"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="8dp"/>
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp">
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/pecel" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Pecel"
+                                        android:textSize="22dp"
+                                        android:textColor="@color/white"/>
+
+                                    <Button
+                                        android:id="@+id/btn_infopecel"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+
+                                    <Button
+                                        android:id="@+id/btn_rekompecel"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/rujak" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rujak Cingur"
+                                        android:textSize="22dp"
+                                        android:textColor="@color/white"/>
+                                    <Button
+                                        android:id="@+id/button3"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+                                    <Button
+                                        android:id="@+id/button4"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/rawon" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rawon"
+                                        android:textSize="22dp"
+                                        android:textColor="@color/white"/>
+                                    <Button
+                                        android:id="@+id/button5"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+                                    <Button
+                                        android:id="@+id/button6"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/tahutek" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tahu Tek"
+                                        android:textSize="22dp"
+                                        android:textColor="@color/white"/>
+                                    <Button
+                                        android:id="@+id/button7"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+                                    <Button
+                                        android:id="@+id/button8"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/ltg_balap" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lontong Balap"
+                                        android:textSize="22dp"
+                                        android:textColor="@color/white"/>
+                                    <Button
+                                        android:id="@+id/button9"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+                                    <Button
+                                        android:id="@+id/button10"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="5dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <ImageView
+                                        android:layout_width="140dp"
+                                        android:layout_height="115dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/ltg_kupang" />
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="10dp">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lontong Kupang"
+                                        android:textSize="20dp"
+                                        android:textColor="@color/white"/>
+                                    <Button
+                                        android:id="@+id/button11"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Informasi"
+                                        android:textAllCaps="false" />
+                                    <Button
+                                        android:id="@+id/button12"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.5"
+                                        android:text="Rekomendasi"
+                                        android:textAllCaps="false" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

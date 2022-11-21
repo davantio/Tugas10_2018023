@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Surabaya Virtual Tourism</string>
+    <string name="deskripsi_pecel">Pecel adalah sebuah hidangan yang terbuat dari berbagai macam sayur yang direbus kemudian disiram dengan bumbu. Bumbu siraman ini disebut sambal pecel.</string>
+    <string name="bahan_pecel">Asam jawa, gula merah, kacang tanah, bawang putih, air, garam, cabai, sayuran. </string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string-array name="nama_kuliner">
+        <item>Rujak Cingur</item>
+        <item>Rawon</item>
+        <item>Tahu Tek</item>
+        <item>Lontong Balap</item>
+        <item>Lontong Kupang</item>
+        <item>Pecel</item>
+    </string-array>
+    <string-array name="deskripsi_kuliner">
+        <item>Menggunakan bumbu olahan petis udang dan irisan cingur</item>
+        <item>Sup daging berkuah hitam dengan campuran bumbu khas yang menggunakan kluwek</item>
+        <item>Tahu goreng setengah matang dan lontong yang dipotong kemudian disiram dengan saus kacang</item>
+        <item>Lontong yang diiris lalu dicampur irisan tahu, kecambah, dan remasan lentho, lalu disiram kuah</item>
+        <item>Lontong yang diiris lalu dicampur kupang putih dan remasan lentho, lalu disiram kuah petis</item>
+        <item>Terbuat dari berbagai macam sayur yang direbus kemudian disiram bumbu</item>
+    </string-array>
+</resources>

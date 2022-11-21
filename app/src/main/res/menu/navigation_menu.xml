@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wisata"
+            android:icon="@drawable/ic_wisata"
+            android:title="Tempat Wisata"/>
+        <item
+            android:id="@+id/nav_kuliner"
+            android:icon="@drawable/ic_kuliner"
+            android:title="Kuliner"/>
+        <item
+            android:id="@+id/nav_penginapan"
+            android:icon="@drawable/ic_hotel"
+            android:title="Penginapan"/>
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:title="Set Alarm"/>
+    </group>
+</menu>
