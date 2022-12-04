@@ -51,6 +51,10 @@ public class Kuliner extends AppCompatActivity {
                     Intent a = new Intent(Kuliner.this,
                             MainActivity.class);
                     startActivity(a);
+                }else if (id == R.id.nav_data) {
+                    Intent a = new Intent(Kuliner.this,
+                            InputHotel.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;
@@ -73,11 +77,13 @@ public class Kuliner extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         return abdt.onOptionsItemSelected(item) ||
                 super.onOptionsItemSelected(item);
     }
+
     //on back press behavior
     @Override
     public void onBackPressed() {

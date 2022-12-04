@@ -49,6 +49,10 @@ public class Wisata extends AppCompatActivity {
                     Intent a = new Intent(Wisata.this,
                             MainActivity.class);
                     startActivity(a);
+                } else if (id == R.id.nav_data) {
+                    Intent a = new Intent(Wisata.this,
+                            InputHotel.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;

@@ -18,5 +18,9 @@
             android:id="@+id/nav_alarm"
             android:icon="@drawable/ic_alarm"
             android:title="Set Alarm"/>
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/ic_sqlite"
+            android:title="Tambah Hotel"/>
     </group>
 </menu>

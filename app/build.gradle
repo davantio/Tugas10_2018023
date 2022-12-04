@@ -48,6 +48,11 @@ dependencies {
     //Library Worker
     implementation "androidx.work:work-runtime:2.7.0"
 
+    //crop image
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    //loading image in image view
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
     implementation "androidx.cardview:cardview:1.0.0"

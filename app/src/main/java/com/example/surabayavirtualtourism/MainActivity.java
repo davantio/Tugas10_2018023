@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent a = new Intent(MainActivity.this,
                             MainActivity.class);
                     startActivity(a);
+                }else if (id == R.id.nav_data) {
+                    Intent a = new Intent(MainActivity.this,
+                            InputHotel.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;
