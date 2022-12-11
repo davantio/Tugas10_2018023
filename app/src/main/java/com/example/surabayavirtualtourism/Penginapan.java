@@ -53,6 +53,10 @@ public class Penginapan extends AppCompatActivity {
                     Intent a = new Intent(Penginapan.this,
                             InputHotel.class);
                     startActivity(a);
+                }else if (id == R.id.nav_quotes) {
+                    Intent a = new Intent(Penginapan.this,
+                            Quotes.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;

@@ -55,6 +55,10 @@ public class Kuliner extends AppCompatActivity {
                     Intent a = new Intent(Kuliner.this,
                             InputHotel.class);
                     startActivity(a);
+                }else if (id == R.id.nav_quotes) {
+                    Intent a = new Intent(Kuliner.this,
+                            Quotes.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;

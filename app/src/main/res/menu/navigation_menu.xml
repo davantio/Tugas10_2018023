@@ -22,5 +22,9 @@
             android:id="@+id/nav_data"
             android:icon="@drawable/ic_sqlite"
             android:title="Tambah Hotel"/>
+        <item
+            android:id="@+id/nav_quotes"
+            android:icon="@drawable/ic_quotes"
+            android:title="Quotes"/>
     </group>
 </menu>
