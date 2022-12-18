@@ -76,6 +76,10 @@ public class Quotes extends AppCompatActivity implements View.OnClickListener{
                     Intent a = new Intent(Quotes.this,
                             Quotes.class);
                     startActivity(a);
+                }else if (id == R.id.nav_logout) {
+                    Intent a = new Intent(Quotes.this,
+                            LogoutActivity.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;

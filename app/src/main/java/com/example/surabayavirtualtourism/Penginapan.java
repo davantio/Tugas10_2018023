@@ -57,6 +57,10 @@ public class Penginapan extends AppCompatActivity {
                     Intent a = new Intent(Penginapan.this,
                             Quotes.class);
                     startActivity(a);
+                }else if (id == R.id.nav_logout) {
+                    Intent a = new Intent(Penginapan.this,
+                            LogoutActivity.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;

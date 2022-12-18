@@ -103,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent a = new Intent(MainActivity.this,
                             Quotes.class);
                     startActivity(a);
+                }else if (id == R.id.nav_logout) {
+                    Intent a = new Intent(MainActivity.this,
+                            LogoutActivity.class);
+                    startActivity(a);
                 }
                 dl.closeDrawer(GravityCompat.START);
                 return true;
